@@ -1,0 +1,16 @@
+pipeline{
+    stages{
+        stage-1-Build{
+
+        }
+        stage-2-Test{
+
+        }
+        stage-3-CodeAnalysis{
+
+        }
+        stage-4-CreatingArtifacts{
+            
+        }
+    }
+}
