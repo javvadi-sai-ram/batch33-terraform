@@ -1,16 +1,36 @@
-pipeline{
-    stages{
-        stage-1-Build{
-
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                // Code for checking out the repository
+            }
         }
-        stage-2-Test{
-
+        stage('Build') {
+            steps {
+                // Code for building the project
+            }
         }
-        stage-3-CodeAnalysis{
-
+        stage('Test') {
+            steps {
+                // Code for running tests
+            }
         }
-        stage-4-CreatingArtifacts{
-            
+        stage('Deploy') {
+            steps {
+                // Code for deployment
+            }
+        }
+    }
+    post {
+        always {
+            // Code for cleanup actions
+        }
+        success {
+            // Code for actions on successful pipeline completion
+        }
+        failure {
+            // Code for actions on pipeline failure
         }
     }
 }
